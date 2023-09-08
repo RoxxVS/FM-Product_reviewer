@@ -25,12 +25,6 @@ body {
     background-color: white;
     border-radius: 10px;
 }
-div.imagen {
-    border-radius: 10px 0px 0 10px;
-    background-image: url(../images/image-product-desktop.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-}
 img {
     width: 100%;
     border-radius: 10px 0px 0 10px;
@@ -49,11 +43,11 @@ h6, p.description, a, span {
 h6 {
     letter-spacing: 3px;
     font-weight: normal;
-    margin-top: 15px;
+    margin-top: 5%;
 }
 p.description {
     line-height: 1.5vw;
-    margin-top: 15px;
+    margin-top: 5%;
 }
 p span {
     text-decoration: line-through;
@@ -61,7 +55,7 @@ p span {
 h1, p.price {
     font-family: var(--primary-text);
     font-size: 2.5vw;
-    margin-top: 15px;
+    margin-top: 5%;
 }
 h1 {
     
@@ -76,7 +70,7 @@ a {
     background-color: var(--primary-color);
     height: 40px;
     width: 80%;
-    margin-top: 20px;
+    margin-top: 10%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -100,38 +94,26 @@ a span {
         width: 90%;
         margin: 8% auto;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr;
+        grid-template-rows: auto auto;
         border-radius: 10px;
-    }
-    div.imagen {
-        border-radius: 10px 10px 0 0;
-        background-image: url(../images/image-product-mobile.jpg);
     }
     main {
         padding: 5% 10%;
-        margin-top: 20px;
         
     }
     h6, p.description, p span {
         font-size: 4vw;
     }
-    h6, p.description {
-        margin-top: 15px;
-    }
     p.description {
         line-height: 6vw;
     }
     h1, p.price {
-        font-size: 58px;
+        font-size: 12vw;
     }
     h1 {
-        line-height: 55px;
-    }
-    p.price {
-        margin-top: 40px;
+        line-height: 12vw;
     }
     a {
-        margin: 40px 10px auto 10px;
         padding: 5%;
         
     }
@@ -141,18 +123,5 @@ a span {
     }
     a span {
         font-size: 4vw;
-    }
-}
-@media only screen and (max-width: 500px) {
-    .container {
-        grid-template-rows: 1fr 3fr;
-
-    }
-    main {
-        margin-top: 0;
-        padding: 5% 4%;
-    }
-    p.price, a {
-        margin-top: 20px;
     }
 }
